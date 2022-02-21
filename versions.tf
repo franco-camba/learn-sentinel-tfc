@@ -2,7 +2,7 @@ terraform {
   required_providers {
     random = {
       source  = "hashicorp/random"
-      version = "3.0.1"
+      version = "3.1.0"
     }
     aws = {
       source  = "hashicorp/aws"
@@ -12,12 +12,12 @@ terraform {
 
   required_version = ">= 0.15"
 
-  backend "remote" {
+  /*backend "remote" {
     organization = "<YOUR_TERRAFORM_ORG>"
 
     workspaces {
       name = "sentinel-example"
     }
-  }
+  }*/
 
 }

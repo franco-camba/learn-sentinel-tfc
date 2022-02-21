@@ -2,6 +2,16 @@ provider "aws" {
   region = var.region
 }
 
+terraform {
+  cloud {
+    organization = "fcamba-org"
+
+    workspaces {
+      name = "aws-cost-control-sentinel"
+    }
+  }
+}
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
