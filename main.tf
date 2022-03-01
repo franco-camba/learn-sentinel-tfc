@@ -7,7 +7,7 @@ terraform {
     organization = "fcamba-org"
 
     workspaces {
-      name = "aws-cost-control-sentinel"
+      name = "aws-sentinel-playground"
     }
   }
 }
