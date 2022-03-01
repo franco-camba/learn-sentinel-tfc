@@ -36,7 +36,7 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name = var.instance_name
-    Department = "Dev"
+    department = "Dev"
     Billable = true
   }
 }
